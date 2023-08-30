@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatchaSketch</title>  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-amber-950">
+    <header class="text-4xl font-semibold text-center my-5">
+        <h1 class="drop-shadow-2xl text-teal-500  ">Eatch a Sketch</h1>
+    </header>
+
+    <main class="container flex flex-col justify-center items-center mx-auto ">
+        <div class="my-container grid " id="container" style="grid-template-columns: repeat(16, minmax(0, 1fr))" >
+
+        </div>
+
+        <div class="ini-button flex space-x-3 justify-between items-center">
+            <div class="my-button flex-row space-x-3  mt-8">
+                <button class="rounded-lg bg-orange-300 hover:bg-orange-400 px-8 py-3 font-medium text-lg text-blue-950" id="reset">Reset</button>
+                <button class="rounded-lg bg-orange-300 hover:bg-orange-400 px-8 py-3 font-medium text-lg text-blue-950" id="hapus">Hapus</button>
+                <button class="rounded-lg bg-orange-300 hover:bg-orange-400 px-8 py-3 font-medium text-lg text-blue-950" id="rainbow">RGB</button>
+                <button class="rounded-lg bg-orange-300 hover:bg-orange-400 px-8 py-3 font-medium text-lg text-blue-950" id="hitam">Hitam</button>
+                
+            </div>
+                <div class="input flex items-center  justify-center mt-auto ">
+                    <input class="bg-emerald-300 " type="range" min="1" max="100" value="16" id="slider">
+                    <p class="font-bold ml-2 text-lg text-green-400" id="value">16</p>
+                </div>
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
